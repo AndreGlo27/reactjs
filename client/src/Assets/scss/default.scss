@@ -1,0 +1,102 @@
+@import "_config.scss";
+
+
+.uniCon{
+    padding-top: 10px;
+}
+
+.visitWeb{
+    text-decoration: none;
+    color: $white;
+
+    &:hover{
+        text-decoration: none;
+        color: $white;
+    }
+}
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .form-inner {
+    padding: 40px 30% 45px 30%;
+    transition: all .3s;
+  }
+
+  @media screen and (max-width: 600px) {
+    .form-inner {
+        padding: 40px 10% 45px 10%;
+        transition: all .3s;
+      }
+  }
+  
+  .form-wrapper .form-control:focus {
+    border-color: #167bff;
+    box-shadow: none;
+  }
+  
+  .form-wrapper h3 {
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    padding-bottom: 20px;
+  }
+  
+  .custom-control-label {
+    font-weight: 400;
+  }
+  
+  .forgot-password,
+  .forgot-password a {
+    text-align: right;
+    font-size: 13px;
+    padding-top: 10px;
+    color: #7f7d7d;
+    margin: 0;
+  }
+  
+  .forgot-password a {
+    color: #167bff;
+  } 
+
+  .infinite-scroll-component {
+      overflow: unset !important;
+  }
+  #loadingBtn {
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.iconFav{
+    right: 20px;
+    position: absolute;
+    font-size: 35px;
+    color: #007bff;
+    cursor: pointer;
+}
+.iconFav.save{
+    right: 20px;
+    position: absolute;
+    font-size: 35px;
+    color:$red;
+    @include transition(.4s ease-in-out);
+    cursor: pointer;
+}
+.loadmore{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.profile.left {
+    text-align: center;
+    border-right: solid 1px lightgrey;
+}
+.profile {
+    margin-top: 15px;
+}
+.profile.right {
+    text-align: left;
+    border-left: solid 1px lightgrey;
+}
